@@ -1,0 +1,318 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<title>
+			Company 360
+		</title>
+		<style>
+			body{
+				margin: 0;
+    			padding: 0;
+    			border: 0;
+			}
+			table{
+				width:100%;
+				border: 1px solid yellow;
+			}
+			td.a, td.b, td.c {
+				width:300px;
+  				border-right: 40px solid yellow;
+  				border-top:0px;
+  				padding: 35px;
+			}
+			td.d{
+				width:300px;
+				border-top:0px;
+				padding: 35px;
+			}
+			div.ribbon{
+				position: absolute;          
+  				top: 0;                      
+  				transform: rotate(-45deg);   
+  				transform-origin: 50% 250%;    
+  				width: 5em;
+                text-align: center;          
+  				padding: 0 0;
+  				border: 1px solid yellow;           
+  				background: yellow;
+			}
+			div.start{
+				background-color: #F0F8FF;
+			}
+			@media screen and (max-width: 600px) {
+				.container{
+					background-color: yellow;
+				}
+	            .carousel-inner{
+	            	background-color: white;
+	            	border:2px solid yellow;
+	                width:auto;
+	            }
+	            .item{
+	                width:auto;
+	            }
+				.indicator{
+				background-color: yellow;
+				width:100%;
+				margin: 0px;
+				padding: 0px;
+				}
+                .ribbon{
+				position: absolute;          
+  				top: 0;                      
+  				transform: rotate(-45deg);   
+  				transform-origin: 50% 250%;    
+  				width: 5em;
+                text-align: center;          
+  				padding: 0 0;
+  				border: 1px solid yellow;           
+  				background: yellow;
+				}
+        	}
+
+				
+        </style>
+        <script>
+			function whichonetoshow() {
+            	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	          
+				if (isMobile) {
+					document.getElementById('containr').style.display = "block";
+					document.getElementById('desktp').style.display = "none";
+
+									}
+				else
+				{
+					document.getElementById("desktp").style.display = "block";
+					document.getElementById("containr").style.display = "none";
+				
+	            }
+	            document.getElementsByClassName(classname).value;
+	        }
+		</script> 
+		
+	</head>
+	<body onload="whichonetoshow()">
+		<!-- FOR DESKTOP -->
+		<div class="desktop" id="desktp" onchange="desktp(this)">
+			<table>
+				<div class="ribbon">New</div>
+				<tr>
+				
+					<td id="a1" data-table="pvt ltd" class="a">
+						<center>
+							<b>Private Limited<br/>Company<br/><br/><hr><br/><br/><br/></b><div class="start"><b>Starting</b><h1><sup>&#8377</sup>999</h1>
+							<a href="www.">+ Govt Fees</a></div>
+						</center>
+						<br/>
+						The default option for start-ups and
+						growing businesses as only private
+						limited companies can raise
+						venture capital. This type of
+						company offers limited liability for
+						its shareholders with certain
+						restrictions placed on the
+						ownership. Private limited
+						company registration, directors
+						may be different from
+						shareholders.
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<center><a href="www.">Know More</a></center>
+					</td>
+					<td id="a2" data-table="ltd liability" class="b">
+						<center>
+							<b>Limited Liability<br/>Partnership<br/><br/><hr><br/><br/><br/></b><div class="start"><b>Starting</b><h1><sup>&#8377</sup>999</h1>
+							<a href="www.">+ Statutory Fees</a></div>
+						</center>
+						<br/>
+						LLP was introduced to provide a
+						form of business that is easy to
+						maintain and to help owners by
+						providing them with limited liability.
+						Limited Liability Partnership
+						Registration combines the benefits
+						of a partnership with that of a
+						limited liability company.
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<center><a href="www.">Know More</a></center>
+					</td>
+					<td id="a3" data-table="one person" class="c">
+						<center>
+							<b>One Person<br/>Company<br/><br/><hr><br/></b><br/><br/><div class="start"><b>Starting</b><h1><sup>&#8377</sup>5998</h1>
+							* All Inclusive</div>
+						</center>
+						<br/>
+						The best structure for solo
+						entrepreneurs looking beyond the
+						opportunities a sole proprietorship
+						affords. Here, a single promoter
+						gains full authority over the
+						company, restricting his/her liability
+						towards their contributions to the
+						enterprise. The said person will be
+						the sole shareholder and director.
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<center><a href="www.">Know More</a></center>
+					</td>
+					<td id="a4" data-table="partnership" class="d">
+						<center>
+							<b>Partnership<br/>Firm<br/><br/><hr><br/><br/><br/></b><div class="start"><b>Starting</b><h1><sup>&#8377</sup>999</h1>
+							<a href="www.">+ Statutory Fees</a></div>
+						</center>
+						<br/>
+						A business structure in which two
+						or more individuals manage a
+						business per the terms in
+						Partnership Deed. It's best suitable
+						for home businesses that are
+						unlikely to take any debt due to low
+						cost, ease of setting up and
+						minimal compliance requirements.
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<center><a href="www.">Know More</a></center>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<!-- FOR MOBILE-->
+		<div class="container" style="width:100" id="containr" visibility: onchange="containr(this)">
+        	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+            	
+
+								            <!-- Wrapper for slides -->
+								            <div class="carousel-inner">
+								                <div class="item active">
+								                    <div class="ribbon">New</div>
+									                    <center style="width :auto">
+									                        <br />
+									                        <br />
+									                        <br />
+									                        <b>Private Limited<br />Company<br /><br /><hr><br /><br /><br /></b><div class="start">
+									                        <b>Starting</b><h1><sup>&#8377</sup>999</h1>
+									                        <a href="www.">+ Govt Fees</a></div>
+
+								                    	</center>
+									                    <center>
+									                        <br />
+									                        The default option for start-ups and
+									                        growing businesses as only private
+									                        limited companies can raise
+									                        venture capital. This type of
+									                        company offers limited liability for
+									                        its shareholders with certain
+									                        restrictions placed on the
+									                        ownership. Private limited
+									                        company registration, directors
+									                        may be different from
+									                        shareholders.
+									                    </center>
+									                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+									                    <center><a href="www.">Know More</a></center>
+									                </div>
+
+									                <div class="item">
+									                    <center style="width:auto">
+									                        <br />
+									                        <br />
+									                        <br />
+									                        <b>Limited Liability<br />Partnership<br /><br /><hr><br /><br /><br /></b>
+									                        <div class="start"><b>Starting</b><h1><sup>&#8377</sup>999</h1>
+									                        <a href="www.">+ Statutory Fees</a></div>
+
+									                    </center>
+									                    <center>
+									                    <br />
+									                    LLP was introduced to provide a
+									                    form of business that is easy to
+									                    maintain and to help owners by
+									                    providing them with limited liability.
+									                    Limited Liability Partnership
+									                    Registration combines the benefits
+									                    of a partnership with that of a
+									                    limited liability company.</center>
+									                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+									                    <center><a href="www.">Know More</a></center>
+									                </div>
+
+									                <div class="item">
+									                    <center style="width: auto">
+									                        <br />
+									                        <br />
+									                        <br />
+									                        <b>One Person<br />Company<br /><br /><hr><br /></b><br /><br />
+									                        <div class="start"><b>Starting</b><h1><sup>&#8377</sup>5998</h1>
+									                        * All Inclusive</div>
+
+									                    </center>
+									                    <center>
+									                        <br />
+									                        The best structure for solo
+									                        entrepreneurs looking beyond the
+									                        opportunities a sole proprietorship
+									                        affords. Here, a single promoter
+									                        gains full authority over the
+									                        company, restricting his/her liability
+									                        towards their contributions to the
+									                        enterprise. The said person will be
+									                        the sole shareholder and director.
+									                    </center>
+									                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+									                    <center><a href="www.">Know More</a></center>
+									                </div>
+									                <div class="item">
+									                    <center style="width: auto">
+									                        <br />
+									                        <br />
+									                        <br />
+									                        <b>Partnership<br />Firm<br /><br /><hr><br /><br /><br /></b><div class="start">
+									                            <b>Starting</b><h1><sup>&#8377</sup>999</h1>
+									                            <a href="www.">+ Statutory Fees</a>
+									                        </div>
+									                    </center>
+									                    <center>
+									                        <br />
+									                        A business structure in which two
+									                        or more individuals manage a
+									                        business per the terms in
+									                        Partnership Deed. It's best suitable
+									                        for home businesses that are
+									                        unlikely to take any debt due to low
+									                        cost, ease of setting up and
+									                        minimal compliance requirements.
+									                    </center>
+									                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+									                    <center><a href="www.">Know More</a></center>
+								                	</div>
+								                
+								                
+								            </div>
+            	<!-- Indicators -->
+				<div class="indicator">
+	            <ol class="carousel-indicators">
+	                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	                <li data-target="#myCarousel" data-slide-to="1"></li>
+	                <li data-target="#myCarousel" data-slide-to="2"></li>
+	                <li data-target="#myCarousel" data-slide-to="3"></li>
+
+	            </ol>
+	            <br/>
+	            <br/>
+	        </div>
+		</div></div>
+
+
+
+
+		
+
+
+		        
+	</body>
+</html>
